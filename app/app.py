@@ -1,27 +1,8 @@
-#import streamlit as st
-#import os
-
-#st.title("Cloud-Based Distributed Data Processing Service")
-
-#st.write("Upload a dataset in CSV, JSON, or TXT format.")
-
-#uploaded_file = st.file_uploader(
- #   "Upload dataset",
- #   type=["csv", "json", "txt", "pdf"]
-#)
-
-#if uploaded_file is not None:
- #   file_name = uploaded_file.name
- #   file_extension = os.path.splitext(file_name)[1]
-
-   # st.success(f"File uploaded: {file_name}")
-   # st.write("File type:", file_extension)
-
 import streamlit as st
 import os
 
 # =======================
-# 🎨 تصميم الصفحة
+#  تصميم الصفحة
 # =======================
 st.set_page_config(
     page_title="Cloud Data Processing",
@@ -37,7 +18,7 @@ st.markdown(
 st.write("---")  # خط فاصل
 
 # =======================
-# 📂 رفع الملف بشكل جميل
+#  رفع الملف 
 # =======================
 st.markdown(
     """
@@ -62,7 +43,7 @@ uploaded_file = st.file_uploader(
 )
 
 # =======================
-# ✅ معلومات الملف بعد الرفع
+# معلومات الملف بعد الرفع
 # =======================
 if uploaded_file is not None:
     file_name = uploaded_file.name
